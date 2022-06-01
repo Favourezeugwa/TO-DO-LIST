@@ -87,6 +87,10 @@ ul li {
   border-bottom: 2px solid #f0f0f0;
 }
 
+.check-list {
+  margin-right: 15px;
+}
+
 /* clear completed button */
 #btn {
   padding: 15px 13px;
