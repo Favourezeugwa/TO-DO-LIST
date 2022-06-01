@@ -1,7 +1,6 @@
-/* eslint-disable linebreak-style */
 const toDoList = document.querySelector('.to-do-list');
 
-const listItems = ({description}) => {
+const listItems = ({ description }) => {
   const li = document.createElement('li');
   toDoList.appendChild(li);
   const div = document.createElement('div');

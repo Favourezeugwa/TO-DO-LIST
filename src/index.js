@@ -3,7 +3,6 @@ import './style.css';
 
 import listItems from './modules/createlist.js';
 
-
 const list = [{
   description: 'Watch movie',
   completed: false,
@@ -19,6 +18,6 @@ const list = [{
   completed: false,
   index: 2,
 },
-]
+];
 
 list.forEach(listItems);
