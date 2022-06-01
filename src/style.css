@@ -1,7 +1,100 @@
-.hello {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Fresca&family=Patrick+Hand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: bisque;
+  font-size: 18px;
+  background: #f0f0f0;
+  font-family: sans-serif;
+}
+
+.fa-arrow-turn-down {
+  transform: rotate(90deg);
+}
+
+i {
+  font-size: 16px;
+  color: #9c9c9c;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  color: #4b4848;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: sans-serif;
+}
+
+/* section style starts */
+#todoList-section {
+  background: none;
+  max-width: 500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(168, 168, 168, 0.54);
+}
+
+/* header */
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 10px;
+  border-bottom: 2px solid #f0f0f0;
+  color: #4b4848;
+}
+
+/* Add to your list */
+#add-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+form #add-item {
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* list items */
+ul {
+  list-style-type: none;
+}
+
+.to-do-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  padding: 12px 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* clear completed button */
+#btn {
+  padding: 12px 10px;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#btn #clear-btn {
+  color: #4b4848;
+  font-size: 16px;
 }
