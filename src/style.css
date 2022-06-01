@@ -7,7 +7,6 @@
 }
 
 body {
-  font-size: 18px;
   background: #f0f0f0;
   font-family: sans-serif;
 }
@@ -26,8 +25,8 @@ input[type="text"] {
   outline: none;
   background-color: transparent;
   font-family: inherit;
-  font-size: 16px;
-  color: #4b4848;
+  font-size: 14px;
+  color: #7a7575;
 }
 
 button {
@@ -53,22 +52,23 @@ button {
 .head {
   display: flex;
   justify-content: space-between;
-  padding: 12px 10px;
+  padding: 15px 13px;
   border-bottom: 2px solid #f0f0f0;
-  color: #4b4848;
+  color: #7a7575;
 }
 
 /* Add to your list */
 #add-form {
   display: flex;
   justify-content: space-between;
-  padding: 12px 10px;
+  padding: 15px 13px;
   border-bottom: 2px solid #f0f0f0;
 }
 
 form #add-item {
   font-style: italic;
   font-size: 15px;
+  color: #f0f0f0;
 }
 
 /* list items */
@@ -83,13 +83,13 @@ ul {
 }
 
 ul li {
-  padding: 12px 10px;
+  padding: 15px 13px;
   border-bottom: 2px solid #f0f0f0;
 }
 
 /* clear completed button */
 #btn {
-  padding: 12px 10px;
+  padding: 15px 13px;
   text-align: center;
   background: #f0f0f0;
 }
