@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favour's To-do-list App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  <script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-<script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
+  <body>
+    <main>
+      <section id="todoList-section">
+        <!-- header -->
+        <header class="head">
+          <h1>Today's To do</h1>
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </header>
 
-<body>
-    <h1>Hello webpack!</h1>
-</body>
+        <!-- Add to your list  -->
+        <form action="#" id="add-form">
+          <input
+            type="text"
+            id="add-item"
+            name="add-item"
+            placeholder="Add to your list..."
+          /><i class="fa fa-arrow-turn-down"></i>
+        </form>
 
+        <!-- list items -->
+        <ul class="to-do-list">
+          <li>
+            <input type="checkbox" class="check-list" name="list-item" />
+            <input
+              type="text"
+              name="list-item"
+              placeholder="Wash the dishes"
+              disabled
+            />
+            <button type="buton">
+              <i class="fa fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+          <li>
+            <input type="checkbox" class="check-list" name="list-item" />
+            <input
+              type="text"
+              name="list-item"
+              placeholder="Wash the dishes"
+              disabled
+            />
+            <button type="buton">
+              <i class="fa fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+        </ul>
+
+        <!-- clear completed button -->
+        <div id="btn">
+          <button type="button" id="clear-btn">clear all completed</button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
