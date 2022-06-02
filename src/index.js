@@ -4,8 +4,6 @@ import './style.css';
 import listItems from './modules/createlist.js';
 import { list, SaveItem } from './modules/class.js';
 
-
-
 const form = document.querySelector('#add-form');
 
 form.addEventListener('submit', (e) => {
@@ -15,11 +13,10 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
-
-for (let i = 0; i < list.length; i += 1) {
-  list.forEach((listObj) => {
-    if (listObj.index === i) {
-      listItems(listObj);
+for (let i = 1; i <= list.length; i += 1) {
+  list.forEach((x) => {
+    if (x.index === i) {
+      listItems(x);
     }
-  }); 
-};
+  });
+}
