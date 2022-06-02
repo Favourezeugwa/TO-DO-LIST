@@ -8,7 +8,7 @@ This simple web page built using webpack and served by a webpack dev server.
 
 [link to live demo](https://favourezeugwa.github.io/TO-DO-LIST/dist)
 
-> TO-DO-LIST: Refractor to use the webpack setup project to bundle JavaScript in a to-do-list application
+> TO-DO-LIST: Refractor to use the webpack setup exercise to bundle JavaScript in a to-do-list application
 
 ## Built With
 
