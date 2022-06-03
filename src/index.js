@@ -46,4 +46,3 @@ clearCompleted.addEventListener('click', () => {
   }
   localStorage.setItem('list', JSON.stringify(list));
 });
-
