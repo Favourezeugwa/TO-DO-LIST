@@ -1,8 +1,9 @@
 import { list, SaveItem } from './class.js';
+import check from './checkbox.js';
 
 const toDoList = document.querySelector('.to-do-list');
 
-const listItems = ({ description }, id) => {
+const listItems = (listItem, id) => {
   const li = document.createElement('li');
   toDoList.appendChild(li);
   const div = document.createElement('div');
@@ -16,7 +17,7 @@ const listItems = ({ description }, id) => {
 
   const text = document.createElement('input');
   text.setAttribute('type', 'text');
-  text.setAttribute('placeholder', description);
+  text.setAttribute('placeholder', listItem.description);
   text.setAttribute('disabled', '');
   div.appendChild(text);
 
@@ -29,6 +30,7 @@ const listItems = ({ description }, id) => {
     const itemParent = event.target.parentNode.parentNode;
     itemParent.querySelector('.fa-trash-can').parentNode.style.display = 'block';
     button.style.display = 'none';
+    li.style.background = '#f7cee9';
     // to edit text
     text.disabled = false;
     text.focus();
@@ -56,9 +58,26 @@ const listItems = ({ description }, id) => {
       button.style.display = 'flex';
       deleteButton.style.display = 'none';
       text.disabled = true;
+      li.style.background = 'none';
       const Item = new SaveItem();
       Item.editItem(id, text.value);
     }
+  });
+
+  // checkbox event listener
+  if (listItem.completed) {
+    checkbox.checked = true;
+    text.style.textDecoration = 'line-through';
+  }
+  let x = {};
+  list.forEach((element) => {
+    if (element === listItem) {
+      x = element;
+    }
+  });
+  checkbox.addEventListener('click', (event) => {
+    check(event, x, text);
+    localStorage.setItem('list', JSON.stringify(list));
   });
 };
 

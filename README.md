@@ -2,7 +2,7 @@
 
 # TO-DO-LIST
 
-This simple web page built using webpack and served by a webpack dev server.
+"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. Here is a simple website that allows for doing that.
 
 ## Live Demo
 
@@ -12,7 +12,8 @@ This simple web page built using webpack and served by a webpack dev server.
 
 ## Built With
 
-- JavaScript
+- Webpack, and served by a Webpack dev server
+- JavaScript(ES6)
 - HTML
 - CSS
 
