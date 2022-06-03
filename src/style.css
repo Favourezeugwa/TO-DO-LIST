@@ -101,3 +101,7 @@ ul li {
   color: #4b4848;
   font-size: 16px;
 }
+
+#btn #clear-btn:hover {
+  color: #000;
+}
