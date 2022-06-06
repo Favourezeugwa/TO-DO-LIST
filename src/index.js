@@ -31,6 +31,7 @@ clearCompleted.addEventListener('click', () => {
       list.splice(list.indexOf(element), 1);
     }
   });
+  // to update the index
   let i = 1;
   list.forEach((element) => {
     element.index = i;
