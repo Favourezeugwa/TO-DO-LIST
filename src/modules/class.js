@@ -3,6 +3,7 @@ import listItems from './createlist.js';
 const addItem = document.querySelector('#add-item');
 
 let list = JSON.parse(localStorage.getItem('list')) || [];
+// can be re written as - let list = localStorage.getItem('list') || [];
 class SaveItem {
   constructor(description, completed = false, index) {
     this.description = description;
@@ -17,6 +18,7 @@ class SaveItem {
     this.index = list.length + 1;
     list.push(this);
     localStorage.setItem('list', JSON.stringify(list));
+    // can be re written as - localStorage('list', list);
     listItems(this, this.index);
   }
 
