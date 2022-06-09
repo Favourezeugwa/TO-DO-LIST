@@ -1,5 +1,5 @@
 import { list, SaveItem } from './class.js';
-import { check } from './checkbox.js';
+import check from './checkbox.js';
 // const { list, SaveItem } = require('./class.js');
 // const { check } = require('./checkbox.js');
 

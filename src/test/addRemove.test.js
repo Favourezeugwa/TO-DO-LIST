@@ -38,12 +38,6 @@ describe('add items to list', () => {
     const list = document.querySelectorAll('.to-do-list li');
     expect(list).toHaveLength(3);
   });
-
-  test('add item three', () => {
-    itemSaved.addNew('eat dinner');
-    const list = document.querySelectorAll('.to-do-list li');
-    expect(list).not.toHaveLength(2);
-  });
 });
 
 describe('remove items from list', () => {
@@ -52,11 +46,13 @@ describe('remove items from list', () => {
     const list = document.querySelectorAll('.to-do-list li');
     expect(list).toHaveLength(2);
   });
+
   test('remove item with index two', () => {
     itemSaved.removeItem(2);
     const list = document.querySelectorAll('.to-do-list li');
     expect(list).toHaveLength(1);
   });
+
   test('remove item with index two', () => {
     itemSaved.removeItem(1);
     const list = document.querySelectorAll('.to-do-list li');

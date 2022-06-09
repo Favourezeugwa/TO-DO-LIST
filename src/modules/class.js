@@ -15,7 +15,7 @@ class SaveItem {
   addNew(newTodo) {
     this.description = newTodo;
     this.index = list.length + 1;
-    list.push({description: this.description, completed: this.completed, index: this.index});
+    list.push({ description: this.description, completed: this.completed, index: this.index });
     localStorage.setItem('list', JSON.stringify(list));
     // can be re written as - localStorage('list', list);
     listItems(this, list.length + 1);
