@@ -39,6 +39,7 @@
     "webpack-dev-server": "^4.9.1"
   },
   "dependencies": {
+    "jest-environment-jsdom": "^28.1.1",
     "lodash": "^4.17.21"
   }
 }
