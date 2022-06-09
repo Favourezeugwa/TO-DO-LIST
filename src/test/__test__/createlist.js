@@ -1,5 +1,7 @@
 import { list, SaveItem } from './class.js';
 import check from './checkbox.js';
+// const { list, SaveItem } = require('./class.js');
+// const { check } = require('./checkbox.js');
 
 const toDoList = document.querySelector('.to-do-list');
 
@@ -83,3 +85,4 @@ const listItems = (listItem, id) => {
 };
 
 export default listItems;
+// module.exports = { listItems };
