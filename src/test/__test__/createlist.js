@@ -74,12 +74,12 @@ const listItems = (listItem, id) => {
   }
   let x = {};
   list.forEach((element) => {
-    if (element === listItem) {
+    if (element.index === listItem.index) {
       x = element;
     }
   });
   checkbox.addEventListener('click', (event) => {
-    check(event, x, text);
+    check(event, x, text, list);
     localStorage.setItem('list', JSON.stringify(list));
   });
 };

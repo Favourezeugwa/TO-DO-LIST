@@ -1,8 +1,6 @@
 import listItems from './createlist.js';
 // const { listItems } = require('./createlist.js');
 
-const addItem = document.querySelector('#add-item');
-
 let list = JSON.parse(localStorage.getItem('list')) || [];
 // can be re written as - let list = localStorage.getItem('list') || [];
 class SaveItem {
@@ -14,13 +12,13 @@ class SaveItem {
 
   // methods
   // add new Item
-  addNew() {
-    this.description = addItem.value;
+  addNew(newTodo) {
+    this.description = newTodo;
     this.index = list.length + 1;
-    list.push(this);
+    list.push({description: this.description, completed: this.completed, index: this.index});
     localStorage.setItem('list', JSON.stringify(list));
     // can be re written as - localStorage('list', list);
-    listItems(this, this.index);
+    listItems(this, list.length + 1);
   }
 
   // remove Item

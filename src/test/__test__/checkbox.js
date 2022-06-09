@@ -1,11 +1,10 @@
-const check = (event, listItem, text) => {
-  if (event.target.checked) {
-    listItem.completed = true;
+const check = (event, listItem, text, list) => {
+  list[listItem.index - 1].completed = !listItem.completed;
+  if (listItem.completed) {
     text.style.textDecoration = 'line-through';
   } else {
-    listItem.completed = false;
     text.style.textDecoration = 'none';
   }
 };
 
-module.exports = { check };
+export default check;
