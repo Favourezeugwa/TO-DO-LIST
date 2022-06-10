@@ -50,12 +50,16 @@ class SaveItem {
 
   // edit text Item
   editItem = (id, text) => {
-    list.forEach((element) => {
+    list = list.map((element) => {
       if (element.index === id) {
         element.description = text;
       }
+      return element;
     });
+    const toDoList = document.querySelector('.to-do-list');
+    toDoList.innerHTML = '';
     localStorage.setItem('list', JSON.stringify(list));
+    this.displaytodos();
   }
 }
 

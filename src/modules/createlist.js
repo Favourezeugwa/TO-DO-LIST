@@ -18,7 +18,7 @@ const listItems = (listItem, id) => {
 
   const text = document.createElement('input');
   text.setAttribute('type', 'text');
-  text.setAttribute('placeholder', listItem.description);
+  text.setAttribute('value', listItem.description);
   text.setAttribute('disabled', '');
   div.appendChild(text);
 
