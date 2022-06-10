@@ -22,7 +22,7 @@ const clearTodos = (list, toDoList, listItems) => {
   todos.forEach((listItem, index) => {
     listItems(listItem, (index + 1));
   });
-  localStorage.setItem('list', JSON.stringify(todos)); 
+  localStorage.setItem('list', JSON.stringify(todos));
 };
 
 export { check, clearTodos };

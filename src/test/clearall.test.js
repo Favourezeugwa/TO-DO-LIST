@@ -32,14 +32,14 @@ describe('set check status', () => {
     itemSaved.addNew('eat breakfast');
     itemSaved.addNew('eat lunch');
     itemSaved.addNew('eat dinner');
-  
+
     const itemOne = document.querySelectorAll('.to-do-list li input[type=text]')[0];
     const itemTwo = document.querySelectorAll('.to-do-list li input[type=text]')[1];
     const itemThree = document.querySelectorAll('.to-do-list li input[type=text]')[2];
 
     check(list[0], itemOne, list);
     check(list[2], itemThree, list);
-  
+
     const itemOneStyle = itemOne.style.textDecoration;
     const itemTwoStyle = itemTwo.style.textDecoration;
     const itemThreeStyle = itemThree.style.textDecoration;
@@ -52,10 +52,10 @@ describe('set check status', () => {
 
 describe('remove all completed status', () => {
   test('clear all completed todos', () => {
-    const toDoList = document.querySelector('.to-do-list'); 
+    const toDoList = document.querySelector('.to-do-list');
 
     clearTodos(list, toDoList, listItems);
-    const todos = document.querySelectorAll('.to-do-list li'); 
+    const todos = document.querySelectorAll('.to-do-list li');
 
     expect(todos).toHaveLength(1);
   });
