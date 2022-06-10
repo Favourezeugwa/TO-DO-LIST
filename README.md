@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-[link to live demo](https://favourezeugwa.github.io/TO-DO-LIST/dist)
+[link to live demo]
 
 > TO-DO-LIST: Refractor to use the webpack setup exercise to bundle JavaScript in a to-do-list application
 
