@@ -48,6 +48,13 @@
 - GitHub: [@Favourezeugwa](https://github.com/Favourezeugwa)
 - LinkedIn: [Favour Amarachi Ezeugwa](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
 
+## Collaborator
+
+👤 **Abdo**
+
+- GitHub: [@Abdo9826](https://github.com/Abdo9826)
+- LinkedIn: [Abdelruhman Mihamed](https://www.linkedin.com/in/abdelruhman-mihamed-a42667179/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

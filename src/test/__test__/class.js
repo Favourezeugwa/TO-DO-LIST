@@ -15,7 +15,11 @@ class SaveItem {
   addNew(newTodo) {
     this.description = newTodo;
     this.index = list.length + 1;
-    list.push({ description: this.description, completed: this.completed, index: this.index });
+    list.push({
+      description: this.description,
+      completed: this.completed,
+      index: this.index,
+    });
     localStorage.setItem('list', JSON.stringify(list));
     // can be re written as - localStorage('list', list);
     listItems(this, list.length + 1);
@@ -37,7 +41,7 @@ class SaveItem {
       listItems(listObj, index + 1);
     });
     localStorage.setItem('list', JSON.stringify(list));
-  }
+  };
 
   // update Index
   updateIndex = () => {
@@ -46,17 +50,21 @@ class SaveItem {
       return element;
     });
     localStorage.setItem('list', JSON.stringify(list));
-  }
+  };
 
   // edit text Item
   editItem = (id, text) => {
-    list.forEach((element) => {
+    list = list.map((element) => {
       if (element.index === id) {
         element.description = text;
       }
+      return element;
     });
+    const toDoList = document.querySelector('.to-do-list');
+    toDoList.innerHTML = '';
     localStorage.setItem('list', JSON.stringify(list));
-  }
+    this.displaytodos();
+  };
 }
 
 export { list, SaveItem };

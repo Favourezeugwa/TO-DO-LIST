@@ -1,7 +1,5 @@
 import { list, SaveItem } from './class.js';
-import check from './checkbox.js';
-// const { list, SaveItem } = require('./class.js');
-// const { check } = require('./checkbox.js');
+import { check } from './checkbox.js';
 
 const toDoList = document.querySelector('.to-do-list');
 
@@ -20,7 +18,7 @@ const listItems = (listItem, id) => {
 
   const text = document.createElement('input');
   text.setAttribute('type', 'text');
-  text.setAttribute('placeholder', listItem.description);
+  text.setAttribute('value', listItem.description);
   text.setAttribute('disabled', '');
   div.appendChild(text);
 
@@ -79,7 +77,7 @@ const listItems = (listItem, id) => {
     }
   });
   checkbox.addEventListener('click', (event) => {
-    check(event, x, text, list);
+    check(x, text, list);
     localStorage.setItem('list', JSON.stringify(list));
   });
 };
