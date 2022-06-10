@@ -43,8 +43,8 @@ describe('Editing items', () => {
     itemSaved.addNew('eat dinner');
     const list = document.querySelectorAll('.to-do-list li');
 
-    itemSaved.editItem(2, 'watch a movie');
-    const taskTwo = document.querySelectorAll('.to-do-list li input[type=text]')[1].value;
+    itemSaved.editItem(3, 'watch a movie');
+    const taskTwo = document.querySelectorAll('.to-do-list li input[type=text]')[2].value;
     expect(taskTwo).toBe('watch a movie');
   });
 });

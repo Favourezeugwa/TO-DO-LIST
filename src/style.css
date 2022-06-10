@@ -87,6 +87,7 @@ form #add-item {
   font-style: italic;
   font-size: 15px;
   color: #7a7575;
+  width: 90%;
 }
 
 /* list items */
