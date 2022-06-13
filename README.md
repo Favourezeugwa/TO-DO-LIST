@@ -19,22 +19,26 @@
 
 ## Getting Started
 
-### Prerequisites
+### Clone this repository
 
-- In the repository, copy the `SSH` code snippet for Awesome-book-2
-- clone into the repository by using `git clone` in the git bash terminal
-- cd into the repository `cd TO-DO-LIST`
-- open VScode terminal `code .`
-- Go live (live server)
+```bash
+$ git clone git@github.com:Favourezeugwa/TO-DO-LIST.git
+$ cd TO-DO-LIST
+```
 
-### Setup
+### Run project
 
-- Linters
-- Git bash (optional: vscode gitbash terminal)
+```bash
+$ npm install
+$ npm run build
+$ npm run start # this will enable webpack to watch for your changes in code
+```
 
-### Install
+### Open page in browser
 
-- Live server on VScode
+```bash
+$ open dist/index.html
+```
 
 ## Author
 
@@ -45,7 +49,7 @@
 
 ## Collaborator
 
-👤 **Abdo**
+👤 **Abdelruhman Mihamed**
 
 - GitHub: [@Abdo9826](https://github.com/Abdo9826)
 - LinkedIn: [Abdelruhman Mihamed](https://www.linkedin.com/in/abdelruhman-mihamed-a42667179/)
