@@ -2,7 +2,8 @@
 
 # TO-DO-LIST
 
-"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. Here is a simple website that allows for doing that.
+> TO-DO-LIST is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. Here is a simple website that allows for doing that.
+> "Refractor to use the webpack setup exercise to bundle JavaScript in a to-do-list application"
 
 ## Screenshots
 
@@ -12,8 +13,6 @@
 ## Live Demo
 
 [link to live demo](https://favourezeugwa.github.io/TO-DO-LIST/dist/)
-
-> TO-DO-LIST: Refractor to use the webpack setup exercise to bundle JavaScript in a to-do-list application
 
 ## Built With
 
