@@ -4,6 +4,11 @@
 
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. Here is a simple website that allows for doing that.
 
+## Screenshots
+
+![](./src/images/desktop-snip-2.PNG)
+![](./src/images/mobile-snip-2.PNG)
+
 ## Live Demo
 
 [link to live demo](https://favourezeugwa.github.io/TO-DO-LIST/dist/)
